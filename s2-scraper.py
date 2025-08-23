@@ -10,10 +10,10 @@ import subprocess
 import sqlite3
 from datetime import datetime
 
-today = datetime.today().strftime('%Y-%m-%d')
+today = datetime.today().strftime('%Y-%m-%d') #will create a date in database with 'YYYY-MM-DD' format
 c_mo = datetime.now().strftime("%B")
 c_yr = datetime.now().strftime("%Y")
-c_day = datetime.now().strftime("%d")
+c_day = datetime.now().strftime("%e") 
 url = """https://publish.obsidian.md/s2underground/S2+Underground+PUBLISH/02+Wire+Reports/"""+c_mo+"/The+Wire+-+"+c_mo+"+"+c_day+"""%2C+"""+c_yr
 pathpath = "/usr/bin/chromedriver"
 
